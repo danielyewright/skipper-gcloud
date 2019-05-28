@@ -1,0 +1,35 @@
+{
+  "name": "skipper-gcloud",
+  "version": "1.0.0",
+  "description": "A skipper adapter to allow uploading files to Google Cloud Storage",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node -e \"require('skipper-adapter-tests')({mocha: { timeout: 360000 }, module: require('./'), bucket:process.env.BUCKET || 'skipper-adapter-tests', projectId: process.env.PROJECTID, keyFilename: process.env.KEYFILENAME, email: process.env.EMAIL});\""
+  },
+  "keywords": [
+    "skipper",
+    "gcloud",
+    "google",
+    "skipper-gcloud",
+    "upload"
+  ],
+  "author": "Daniely Wright",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielyewright/skipper-gcloud.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielyewright/skipper-gcloud.git"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.5.0",
+    "concat-stream": "^2.0.0",
+    "lodash": "^4.17.11",
+    "mime": "^2.4.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "skipper-adapter-tests": "^2.0.0"
+  }
+}
