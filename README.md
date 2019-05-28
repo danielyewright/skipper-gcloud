@@ -1,3 +1,6 @@
+[![npm version](https://img.shields.io/npm/v/skipper-gcloud.svg)](https://www.npmjs.org/package/skipper-gcloud)
+
+
 skipper-gcloud
 ===========
 
